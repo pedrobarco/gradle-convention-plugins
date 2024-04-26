@@ -1,0 +1,11 @@
+plugins {
+    id 'pl.allegro.tech.build.axion-release'
+}
+
+scmVersion {
+    tag {
+        prefix = project.name + "-v"
+    }
+}
+
+project.version = scmVersion.version
